@@ -7,7 +7,7 @@
 
 -p <machine-port>:<container-port>
 -e for setting environment variables
--d to run as daemon (background)
+-d to run as detached (background)
 
 Also note, password is not asked when we run postgres container locally
 
@@ -22,6 +22,9 @@ To exit console, use: `\q`
 `docker logs <container_name_or_id>`
 
 To check logs for container we created:
+`docker logs postgres12`
+
+To tail the logs:
 `docker logs postgres12`
 
 ----

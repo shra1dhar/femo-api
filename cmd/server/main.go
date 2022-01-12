@@ -7,7 +7,7 @@ import (
 )
 
 // Main structure to contain server thingy like pointer to DB
-type App struct {}
+type App struct{}
 
 func (a *App) Run() error {
 	fmt.Println("Running")
@@ -15,7 +15,7 @@ func (a *App) Run() error {
 	handler := transportHTTP.NewHandler()
 	handler.SetupRoutes()
 
-	if err := http.ListenAndServe(":9009",handler.Router); err != nil {
+	if err := http.ListenAndServe(":9009", handler.Router); err != nil {
 		fmt.Println("Error occured while instantiating")
 		return err
 	}

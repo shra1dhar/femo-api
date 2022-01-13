@@ -25,7 +25,7 @@ To check logs for container we created:
 `docker logs postgres12`
 
 To tail the logs:
-`docker logs postgres12`
+`docker logs postgres12 --tail` or `docker logs postgres12 --follow`
 
 ----
 
